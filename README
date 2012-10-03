@@ -3,3 +3,9 @@ http://forge.kayako.com/projects/kayako-ruby-api-library
 
 For help and support from the Kayako developer community, visit:
 http://forums.kayako.com/
+
+
+In this there is some major changes while downloading attachment.
+It is compatible with ruby 1.9.x.
+
+As in higher version of ruby there is a support for encodings.
