@@ -55,7 +55,8 @@ module KayakoClient
                 @file
             elsif contents
                 raise RuntimeError, "not a remote file" unless id && !new?
-                @file = Tempfile.new(file_name.split('.').first || 'kayako_attachment')
+                @file = Tempfile.new([file_name.split('.').first || 'kayako_attachment', "."+file_name.split('.').last])
+                @file.binmode
                 @file.write(contents)
                 @file.flush
                 @file.rewind
