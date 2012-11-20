@@ -26,7 +26,7 @@ module KayakoClient
         property :enable_dst,           :boolean
         property :sla_plan_id,          :integer
         property :sla_plan_expiry,      :date
-        property :password,             :string, :new => true, :required => :post
+        property :password,             :string :required => :post
         property :send_welcome_email,   :boolean, :new => true
 
         associate :user_group,          :user_group_id,        UserGroup
